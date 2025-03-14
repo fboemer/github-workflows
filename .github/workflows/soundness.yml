@@ -131,7 +131,7 @@ jobs:
           ADDITIONAL_DOCC_ARGUMENTS: ${{ inputs.docs_check_additional_arguments }}
         run: |
           which curl yq || (apt -q update && apt -yq install curl yq)
-          curl -s https://raw.githubusercontent.com/swiftlang/github-workflows/refs/heads/main/.github/workflows/scripts/check-docs.sh | bash
+          curl -s https://raw.githubusercontent.com/fboemer/github-workflows/refs/heads/main/.github/workflows/scripts/check-docs.sh | bash
 
   unacceptable-language-check:
     name: Unacceptable language check
